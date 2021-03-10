@@ -13,7 +13,6 @@ namespace HW
     {
         ////1.Пользователь вводит 2 числа(A и B).Если A > B, 
         ////    подсчитать A+B, если A = B, подсчитать A* B, если A < B, подсчитать A-B.
-
         public static double task1(double a, double b)
         {
             if (a > b)
@@ -31,7 +30,6 @@ namespace HW
         }
 
         ////2.Пользователь вводит 2 числа(X и Y).Определить какой четверти принадлежит точка с координатами(X, Y).
-
         public static int task2(double a, double b)
         {
             if (a > 0 && b > 0)
@@ -54,7 +52,6 @@ namespace HW
         }
 
         ////3.Пользователь вводит 3 числа(A, B и С).Выведите их в консоль в порядке возрастания.
-
         public static int[] task3(int a, int b, int c)
         {
             if (a < b)

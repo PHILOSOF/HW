@@ -13,15 +13,16 @@ namespace HW
                 //Console.WriteLine(HW2.task1(3, 3));
                 //Console.WriteLine(HW2.task2(3, -3));
                 //HW4.showArray(HW2.task3(3, 5, 1));
-                for(int i=1;i<100;++i)
-                {
-                    Console.WriteLine(HW2.task5(i));
-                }
+                //for(int i=1;i<100;++i)
+                //{
+                //    Console.WriteLine(HW2.task5(i));
+                //}
                 
 
             }//2
             {  // HW4.showArray(HW3.task2());
                 //Console.WriteLine(HW3.task4());
+                Console.WriteLine(HW3.task10(123456));
             }//3
             {
                 //int[] array = HW4.createAndFillArray();
