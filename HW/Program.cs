@@ -37,11 +37,12 @@ namespace HW
                 int[,] arr = HW5.createAndFillTwoDimensionalArray();
                 HW5.showTwoDimensionalArray(arr);
                 Console.WriteLine();
-                HW5.showTwoDimensionalArray(HW5.task6(arr));
+                //HW5.showTwoDimensionalArray(HW5.task6(arr));
                 //Console.WriteLine(HW5.task1(arr));
                 //Console.WriteLine(HW5.task2(arr));
                 //HW4.showArray(HW5.task3(arr));
-                //HW4.showArray(HW5.task4(arr));
+                //HW4.showArray(HW5.task4(arr
+                Console.WriteLine(HW5.task5(arr));
 
 
             }//5

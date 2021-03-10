@@ -7,7 +7,7 @@ namespace HW
 {
     class HW5
     {
-        public static int[,] createAndFillTwoDimensionalArray(int height = 5, int width = 9,  int min = 0, int max = 10)
+        public static int[,] createAndFillTwoDimensionalArray(int height = 5, int width = 5,  int min = 0, int max = 10)
         {
             int[,] array = new int[height,width];
             Random rand = new Random();
@@ -102,6 +102,30 @@ namespace HW
         }
 
         //5.Найти количество элементов массива, которые больше всех своих соседей одновременно
+        public static int task5(int[,] arr)
+        {
+            int count = 0;
+            for (int i = 0; i < arr.GetLength(0); ++i)
+            {
+                for (int j = 0; j < arr.GetLength(1); ++j)
+                {
+                    if ((i <= 0 || arr[i, j] > arr[i - 1, j])
+                         && (i >= arr.GetLength(0) - 1 || arr[i, j] > arr[i + 1, j])
+                         && (j <= 0 || arr[i, j] > arr[i, j - 1])
+                         && (j >= arr.GetLength(1) - 1 || arr[i, j] > arr[i, j + 1])
+                        &&((i <= 0 || j <= 0) || arr[i, j] > arr[i - 1, j - 1])
+                        &&((i <= 0 || j >= arr.GetLength(1) - 1) || arr[i, j] > arr[i - 1, j + 1])
+                        &&((i >= arr.GetLength(0) - 1 ||  j <= 0) || arr[i, j] > arr[i + 1, j - 1])
+                        &&((i >= arr.GetLength(0) - 1 || j >= arr.GetLength(1) - 1) || arr[i, j] > arr[i + 1, j + 1]))
+                    {
+                        Console.WriteLine($"{arr[i, j]} {i} {j}");
+                        ++count;
+                    }
+                }
+            }
+
+            return count;
+        }
 
         //6.Отразите массив относительно его главной диагонали
         public static int[,] task6(int[,] arr)

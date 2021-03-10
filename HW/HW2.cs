@@ -14,7 +14,7 @@ namespace HW
         ////1.Пользователь вводит 2 числа(A и B).Если A > B, 
         ////    подсчитать A+B, если A = B, подсчитать A* B, если A < B, подсчитать A-B.
 
-        public static double task1(double a,double b)
+        public static double task1(double a, double b)
         {
             if (a > b)
             {
@@ -55,19 +55,19 @@ namespace HW
 
         ////3.Пользователь вводит 3 числа(A, B и С).Выведите их в консоль в порядке возрастания.
 
-        public static int[] task3(int a, int b,int c)
+        public static int[] task3(int a, int b, int c)
         {
             if (a < b)
             {
                 if (a < c)
                 {
                     if (b < c)
-                        return new int[3] { a,b,c} ;
+                        return new int[3] { a, b, c };
                     else
                         return new int[3] { a, c, b };
                 }
                 else
-                    return new int[3] { c,a,b }; 
+                    return new int[3] { c, a, b };
             }
             else if (b < c)
             {
@@ -77,10 +77,10 @@ namespace HW
                     return new int[3] { b, c, a };
             }
             else
-                return new int[3] {c, b, a};
+                return new int[3] { c, b, a };
 
         }
-        
+
 
         ////4.Пользователь вводит 3 числа(A, B и С).Выведите в консоль решение(значения X)
         ////    квадратного уравнения стандартного вида, где AX2 + BX + C = 0.
@@ -107,22 +107,25 @@ namespace HW
         //    Console.WriteLine(" Так как дискриминант меньше нуля, то уравнение не имеет действительных решений.");
         //}
 
-        //Console.WriteLine("Нажмите любую кнопку...");
-        //Console.ReadLine();
-        //Console.Clear();
-        ////5.Пользователь вводит двузначное число.
-        ////    Выведите в консоль прописную запись этого числа.
-        ////    Например при вводе “25” в консоль будет выведено “двадцать пять”.
-        //int A;
-        //A = Convert.ToInt32(Console.ReadLine());
-        //int first = A / 10;
-        //int second = A % 10;
-        //string output="";
-        //switch (first)
-        //{
-        //    case 0:
-        //        break;
 
+        //5.Пользователь вводит двузначное число.
+        //    Выведите в консоль прописную запись этого числа.
+        //    Например при вводе “25” в консоль будет выведено “двадцать пять”.
+        //public static string task5(int num)
+        //{
+        //    string ret = "";
+        //    int first = num / 10;
+        //    int second = num % 10;
+        //    string output = "";
+        //    switch (first)
+        //    {
+        //        case 0:
+        //            break;
+        //    }
+        //    return ret;
         //}
-    }
+
 }
+       
+}
+
