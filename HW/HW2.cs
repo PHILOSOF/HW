@@ -111,19 +111,56 @@ namespace HW
         //5.Пользователь вводит двузначное число.
         //    Выведите в консоль прописную запись этого числа.
         //    Например при вводе “25” в консоль будет выведено “двадцать пять”.
-        //public static string task5(int num)
-        //{
-        //    string ret = "";
-        //    int first = num / 10;
-        //    int second = num % 10;
-        //    string output = "";
-        //    switch (first)
-        //    {
-        //        case 0:
-        //            break;
-        //    }
-        //    return ret;
-        //}
+        public static string task5(int num)
+        {
+            string output = "";   
+            if(9<num && num<20)
+            {
+                switch (num)
+                {
+                    case 10: output = "десять"; break;
+                    case 11: output = "одинадцать"; break;
+                    case 12: output = "двенадцать"; break;
+                    case 13: output = "тринадцать"; break;
+                    case 14: output = "четырнадцать"; break;
+                    case 15: output = "пятнадцать"; break;
+                    case 16: output = "шестнадцать"; break;
+                    case 17: output = "семнадцать"; break;
+                    case 18: output = "восемнадцать"; break;
+                    case 19: output = "девятнадцать"; break;
+                }
+            }
+            else
+            {
+                switch (num / 10)
+                {
+                    case 2: output = "двадцать "; break;
+                    case 3: output = "тридцать "; break;
+                    case 4: output = "сорок "; break;
+                    case 5: output = "пятьдесят "; break;
+                    case 6: output = "шестьдесят "; break;
+                    case 7: output = "семдесят "; break;
+                    case 8: output = "восемьдесят "; break;
+                    case 9: output = "девяносто "; break;
+                }
+                switch (num % 10)
+                {
+                    case 1: output += "один"; break;
+                    case 2: output += "два"; break;
+                    case 3: output += "три"; break;
+                    case 4: output += "четыре"; break;
+                    case 5: output += "пять"; break;
+                    case 6: output += "шесть"; break;
+                    case 7: output += "семь"; break;
+                    case 8: output += "восемь"; break;
+                    case 9: output += "девять"; break;
+                }
+
+            }
+            
+
+            return output;
+        }
 
 }
        
