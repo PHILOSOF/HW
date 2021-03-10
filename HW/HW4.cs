@@ -135,8 +135,41 @@ namespace HW
         }
 
         //9.Отсортировать массив по возрастанию одним из способов:  пузырьком(Bubble), выбором(Select) или вставками(Insert))
+            public static int[] task9(int[] arr)
+        {
+            int tmp;
+            for (int i = 0; i < arr.Length; ++i)
+            {
+                for(int j=i+1;j<arr.Length;++j)
+                {
+                    if(arr[i]>arr[j])
+                    {
+                        tmp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = tmp;
+                    }
+                } 
+            }
+            return arr;
+        }
 
         //10.Отсортировать массив по убыванию одним из способов, (отличным от способа в 9-м задании) :  пузырьком(Bubble), выбором(Select) или вставками(Insert))
-
+        public static int[] task10(int[] arr)
+        {
+            int tmp;
+            for (int i = 1; i < arr.Length; ++i)
+            {
+                for (int j = 0; j < arr.Length-i; ++j)
+                {
+                    if (arr[j+1] < arr[j])
+                    {
+                        tmp = arr[j];
+                        arr[j] = arr[j+1];
+                        arr[j+1] = tmp;
+                    }
+                }
+            }
+            return arr;
+        }
     }
 }

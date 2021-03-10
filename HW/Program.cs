@@ -20,29 +20,21 @@ namespace HW
                 //Console.WriteLine(HW3.task4());
             }//3
             {
-                //int[] array = HW4.createAndFillArray();
-                //HW4.showArray(array);
-                //Console.WriteLine(HW4.task1(array));
-                //Cons.0ole.WriteLine(HW4.task2(array));
-                //Console.WriteLine(HW4.task3(array));
-                //Console.WriteLine(HW4.task4(array));
-                //Console.WriteLine(HW4.task5(array));
-
-                //HW4.task6(array);
-                //Console.WriteLine(HW4.task5(array));
-                // HW4.task8(array);
-                // HW4.showArray(array);
+                int[] array = HW4.createAndFillArray();
+                HW4.showArray(array);
+                HW4.showArray(HW4.task10(array));
+                HW4.showArray(HW4.task9(array));
             }//4
             {
-                int[,] arr = HW5.createAndFillTwoDimensionalArray();
-                HW5.showTwoDimensionalArray(arr);
-                Console.WriteLine();
+                //int[,] arr = HW5.createAndFillTwoDimensionalArray();
+                //HW5.showTwoDimensionalArray(arr);
+                //Console.WriteLine();
                 //HW5.showTwoDimensionalArray(HW5.task6(arr));
                 //Console.WriteLine(HW5.task1(arr));
                 //Console.WriteLine(HW5.task2(arr));
                 //HW4.showArray(HW5.task3(arr));
                 //HW4.showArray(HW5.task4(arr
-                Console.WriteLine(HW5.task5(arr));
+                //Console.WriteLine(HW5.task5(arr));
 
 
             }//5
