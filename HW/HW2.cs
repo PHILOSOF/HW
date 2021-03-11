@@ -9,7 +9,7 @@ namespace HW
     //Console.WriteLine("Нажмите любую кнопку...");
     //Console.ReadLine();
     //Console.Clear();
-    class HW2
+    public static class HW2
     {
         ////1.Пользователь вводит 2 числа(A и B).Если A > B, 
         ////    подсчитать A+B, если A = B, подсчитать A* B, если A < B, подсчитать A-B.

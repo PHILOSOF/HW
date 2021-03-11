@@ -10,6 +10,9 @@ namespace HW
         static void Main(string[] args)
         {
             {
+                Console.WriteLine(HW1.task5(1, 0, 3, 0));
+            }//1
+            {
                 //Console.WriteLine(HW2.task1(3, 3));
                 //Console.WriteLine(HW2.task2(3, -3));
                 //HW4.showArray(HW2.task3(3, 5, 1));
@@ -31,7 +34,8 @@ namespace HW
                 //HW4.showArray(HW4.task9(array));
             }//4
             {
-                //int[,] arr = HW5.createAndFillTwoDimensionalArray();
+                //Random rand = new Random();
+                //int[,] arr = HW5.createAndFillTwoDimensionalArray(rand.Next(1, 10), rand.Next(1, 10));
                 //HW5.showTwoDimensionalArray(arr);
                 //Console.WriteLine();
                 //HW5.showTwoDimensionalArray(HW5.task6(arr));

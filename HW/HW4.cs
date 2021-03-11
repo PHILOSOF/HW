@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HW
 {
-    class HW4
+    public static class HW4
     {
         public static int[] createAndFillArray(int size = 9, int min = 0, int max = 10)
         {
