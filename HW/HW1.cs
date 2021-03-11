@@ -20,6 +20,14 @@ namespace HW
                 throw new DivideByZeroException();
             return (5 * a + b * b) / (b - a);
         }
+        //Пользователь вводит 2 значения(A и B). Поменяйте содержимое переменных A и B местами.
+        public static void task2(ref int a,ref int b)
+        {
+            int tmp;
+            tmp = a;
+            a = b;
+            b = tmp;
+        }
 
         //// задача №3 Пользователь вводит 2 числа(A и B). Выведите в консоль результат деления A на B и остаток от деления.
         public static int[] task3(int a, int b)
@@ -42,7 +50,7 @@ namespace HW
         ///
         public static string task5(double x1,double y1,double x2, double y2)
         {
-            if ((x1 == x2) || x2 == 0)
+            if (x1 - x2 == 0)
             {
                 throw new DivideByZeroException();
             }
