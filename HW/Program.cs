@@ -24,8 +24,10 @@ namespace HW
 
             }//2
             {  // HW4.showArray(HW3.task2());
-                //Console.WriteLine(HW3.task4());
-                Console.WriteLine(HW3.task8(65));
+               //Console.WriteLine(HW3.task4());
+               // Console.WriteLine(HW3.task8(65));
+               //HW4.showArray (HW3.task11(-150));
+                Console.WriteLine(HW3.task12(12313123, -131213121));
             }//3
             {
                 //int[] array = HW4.createAndFillArray();

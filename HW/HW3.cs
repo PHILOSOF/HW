@@ -7,6 +7,31 @@ namespace HW
 {
     public static class HW3
     {
+        private static bool isEvenMoreUneven(int num)
+        {
+            bool ret = false;
+            int even = 0;
+            int uneven = 0;
+            do
+            {
+                if ((num % 10) % 2 == 0)
+                {
+                    even += (num % 10);
+                }
+                else
+                {
+                    uneven += (num % 10);
+                }
+                num /= 10;
+            }
+            while (num != 0);
+            if (even > uneven)
+            {
+               ret = true;
+            }
+
+            return ret;
+        }
         //1. Пользователь вводит 2 числа(A и B).Возвести число A в степень B.
         public static double task1(double a, double b)
         {
@@ -167,11 +192,53 @@ namespace HW
  
     //11. Пользователь вводит целое положительное  число(N).Выведите числа в диапазоне от 1 до N,
     //     сумма четных цифр которых больше суммы нечетных. 
-    
+    public static int[] task11(int N)
+        {
+            int count = 0;
+            for(int i=2;i<=N;++i)
+            {  
+                if (isEvenMoreUneven(i))
+                {
 
+                    ++count;
+                }
+            }
+            int[] retArr = new int[count];
+            count = 0;
+            for (int i = 2; i <= N; ++i)
+            {
+                if (isEvenMoreUneven(i))
+                {
+                    retArr[count] = i;
+                    ++count;
+                }
+            }
+            return retArr;
+        }
 
     //12. Пользователь вводит 2 числа.Сообщите, есть ли в написании двух чисел одинаковые цифры.
     //     Например, для пары 123 и 3456789, ответом будет являться “ДА”, а, для пары 500 и 99 - “НЕТ”.
+    public static bool task12(int a,int b)
+        {
+            bool ret = false;
+            a = Math.Abs(a);
+            b = Math.Abs(b);
+            do
+            {
+                int tmp = b;
+                do
+                {
+                    if (a % 10 == tmp % 10)
+                        return true;
+                    tmp /= 10;
+                }
+                while (tmp != 0);
+                a /= 10;
+            }
+            while (a != 0);
+
+            return ret;
+        }
 
 
 }
