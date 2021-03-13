@@ -44,7 +44,7 @@ namespace HW
             {
                 return 3;
             }
-            else //if (a > 0 && b < 0)
+            else
             {
                 return 4;
             }
@@ -81,28 +81,25 @@ namespace HW
 
         ////4.Пользователь вводит 3 числа(A, B и С).Выведите в консоль решение(значения X)
         ////    квадратного уравнения стандартного вида, где AX2 + BX + C = 0.
+        public static double[] task4(double a, double b, double c)
+        {
+            double[] retArr = new double[2];
+            double D = b * b - 4 * a * c;
+            if (D >= 0)
+            {
+                retArr[0] = (-b - Math.Sqrt(D)) / (2 * a);
+                retArr[1] = (-b + Math.Sqrt(D)) / (2 * a);
+                
+            }
+            else
+            {
+                throw new Exception("Discriminant less than zero, no solutions");
+            }
 
-        //a = Convert.ToDouble(Console.ReadLine());
-        //b = Convert.ToDouble(Console.ReadLine());
-        //c = Convert.ToDouble(Console.ReadLine());
+            return retArr;
+        }
 
-        //double D = b * b - 4 * a * c;
-        //if (D > 0)
-        //{
-        //    Console.WriteLine("x1 =" + (-b - Math.Sqrt(D)) / (2 * a));
-        //    Console.WriteLine("x2 =" + (-b + Math.Sqrt(D)) / (2 * a));
-        //}
-        //else if (D == 0)
-        //{
-        //    Console.WriteLine("Так как дискриминант равен нулю то," +
-        //        " квадратное уравнение имеет один действительный корень:");
-
-        //    Console.WriteLine("x =" + (-b) / (2 * a));
-        //}
-        //else
-        //{
-        //    Console.WriteLine(" Так как дискриминант меньше нуля, то уравнение не имеет действительных решений.");
-        //}
+        
 
 
         //5.Пользователь вводит двузначное число.

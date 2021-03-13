@@ -5,11 +5,6 @@ using System.Text;
 
 namespace HW
 {
-
-
-
-
-
     public static class HW1
     {
         //// задача №1 Пользователь вводит 2 числа(A и B). Выведите в консоль решение (5*A+B*B)/(B-A)
@@ -20,7 +15,7 @@ namespace HW
                 throw new DivideByZeroException();
             return (5 * a + b * b) / (b - a);
         }
-        //Пользователь вводит 2 значения(A и B). Поменяйте содержимое переменных A и B местами.
+        // задача №2Пользователь вводит 2 значения(A и B). Поменяйте содержимое переменных A и B местами.
         public static void task2(ref int a,ref int b)
         {
             int tmp;
