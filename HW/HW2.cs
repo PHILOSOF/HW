@@ -32,6 +32,10 @@ namespace HW
         ////2.Пользователь вводит 2 числа(X и Y).Определить какой четверти принадлежит точка с координатами(X, Y).
         public static int task2(double a, double b)
         {
+            if(a==0 || b==0)
+            {
+                throw new System.ArgumentException("The point is on the coordinate axis");
+            }
             if (a > 0 && b > 0)
             {
                 return 1;
@@ -77,7 +81,6 @@ namespace HW
                 return new int[3] { c, b, a };
 
         }
-
 
         ////4.Пользователь вводит 3 числа(A, B и С).Выведите в консоль решение(значения X)
         ////    квадратного уравнения стандартного вида, где AX2 + BX + C = 0.

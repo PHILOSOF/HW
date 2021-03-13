@@ -38,11 +38,11 @@ namespace HW.test
 
         [TestCase(1, 5, 3, -2)]
         [TestCase(10, 2, 7, 0.5)]
-        [TestCase(8, 3, 2, -0.125)]
+        [TestCase(3, 3, 5, 0.66)]
         public void Task4(double a, double b, double c, double expected)
         {
             double actual = HW1.task4(a, b, c);
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, actual, 0.01d);
         }
 
         //$"Y = {(y1 - y2) / (x1 - x2)}X + {y2 - ((y1 - y2) / (x1 - x2)) * x2}"
