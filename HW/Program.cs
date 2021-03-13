@@ -10,7 +10,7 @@ namespace HW
         static void Main(string[] args)
         {
             {
-                Console.WriteLine(HW1.task5(1, 0, 3, 0));
+               // Console.WriteLine(HW1.task5(1, 0, 3, 0));
             }//1
             {
                 //Console.WriteLine(HW2.task1(3, 3));
@@ -25,7 +25,7 @@ namespace HW
             }//2
             {  // HW4.showArray(HW3.task2());
                 //Console.WriteLine(HW3.task4());
-                Console.WriteLine(HW3.task10(123456));
+                Console.WriteLine(HW3.task8(65));
             }//3
             {
                 //int[] array = HW4.createAndFillArray();

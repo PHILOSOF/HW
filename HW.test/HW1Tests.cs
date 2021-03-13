@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using HW;
 
-namespace Tests
+namespace HW.test
 {
     public class HW1Tests
     {
@@ -16,8 +16,8 @@ namespace Tests
 
         [TestCase(1, 5, 5, 1)]
         [TestCase(0, 1, 1, 0)]
-        [TestCase(10, 0, 0, 10)]
-        public void Task2(int a, int b, int expectedA, int expectedB)
+        [TestCase(10,0,0,10)]
+        public void Task2(int a,int b, int expectedA, int expectedB)
         {
             HW1.task2(ref a, ref b);
 
@@ -47,11 +47,11 @@ namespace Tests
 
         //$"Y = {(y1 - y2) / (x1 - x2)}X + {y2 - ((y1 - y2) / (x1 - x2)) * x2}"
         [TestCase(1, 5, 3, 2, "Y = -1,5X + 6,5")]
-        [TestCase(10, 2, 7, 5, "Y = -1X + 12")]
-        [TestCase(8, 3, 2, 12, "Y = -1,5X + 15")]
+        [TestCase( 10, 2, 7, 5, "Y = -1X + 12")]
+        [TestCase( 8, 3, 2, 12, "Y = -1,5X + 15")]
         public void Task5(double x1, double y1, double x2, double y2, string expected)
         {
-            string actual = HW1.task5(x1, y1, x2, y2);
+            string actual = HW1.task5(x1,y1,x2,y2);
             Assert.AreEqual(expected, actual);
         }
     }

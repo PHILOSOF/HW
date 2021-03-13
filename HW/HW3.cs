@@ -116,14 +116,25 @@ namespace HW
 
         //8. Пользователь вводит целое положительное число,
         //     которое является кубом целого числа N. Найдите число N методом половинного деления.
-        //public static int task8(long a)
-        //{
-
-                
-        //    return 0;
-        //}
-
-
+        public static int task8(int a)
+        {
+            int left = 1;
+            int right = a;
+            int middle = right;
+            while(middle*middle*middle != a)
+            {
+               if(((right + left) / 2) * ((right + left) / 2) * ((right + left) / 2) > a)
+                {
+                    right = middle;
+                }
+               else
+                {
+                    left = middle;
+                }
+                middle = (right + left) / 2;
+            }
+            return middle;
+        }
 
         //9. Пользователь вводит 1 число.Найти количество нечетных цифр этого числа.
         public static int task9(int a)
@@ -156,6 +167,7 @@ namespace HW
  
     //11. Пользователь вводит целое положительное  число(N).Выведите числа в диапазоне от 1 до N,
     //     сумма четных цифр которых больше суммы нечетных. 
+    
 
 
     //12. Пользователь вводит 2 числа.Сообщите, есть ли в написании двух чисел одинаковые цифры.
