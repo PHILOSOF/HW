@@ -32,6 +32,10 @@ namespace HW
         //1.Найти минимальный элемент массива
         public static int task1(int[] arr)
         {
+            if(arr.Length==0)
+            {
+                throw new ArgumentException("Array size cannot be zero");
+            }
             int min = arr[0];
             for(int i=1;i<arr.Length;++i)
             {

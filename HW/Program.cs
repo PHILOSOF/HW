@@ -27,13 +27,24 @@ namespace HW
                //Console.WriteLine(HW3.task4());
                // Console.WriteLine(HW3.task8(65));
                //HW4.showArray (HW3.task11(-150));
-                Console.WriteLine(HW3.task12(12313123, -131213121));
+                //Console.WriteLine(HW3.task12(12313123, -131213121));
             }//3
             {
                 //int[] array = HW4.createAndFillArray();
                 //HW4.showArray(array);
                 //HW4.showArray(HW4.task10(array));
                 //HW4.showArray(HW4.task9(array));
+
+               // HW4.task1(new int[] { });
+               // HW4.task2(new int[] { });
+                HW4.task3(new int[] { });
+                HW4.task4(new int[] { });
+                HW4.task5(new int[] { });
+                HW4.task6(new int[] { });
+                HW4.task7(new int[] { });
+                HW4.task8(new int[] { });
+                HW4.task9(new int[] { });
+                HW4.task10(new int[] { });
             }//4
             {
                 //Random rand = new Random();
