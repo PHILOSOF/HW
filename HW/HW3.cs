@@ -32,6 +32,7 @@ namespace HW
 
             return ret;
         }
+
         //1. Пользователь вводит 2 числа(A и B).Возвести число A в степень B.
         public static double task1(double a, double b)
         {
@@ -68,7 +69,7 @@ namespace HW
         }
 
         //4. Пользователь вводит 1 число(A).Вывести наибольший делитель(кроме самого A) числа A.
-        public static int task4(int a = 137)
+        public static int task4(int a)
         {
 
             for (int i = 2; i < a; ++i)
@@ -85,7 +86,7 @@ namespace HW
         //5. Пользователь вводит 2 числа(A и B).
         //     Вывести сумму всех чисел из диапазона от A до B, которые делятся без остатка на 7.
         //     (Учтите, что при вводе B может оказаться меньше A).
-        public static int task5(int a = 1,int b = 157)
+        public static int task5(int a, int b)
          {
             int tmp;
             if (b<a)
@@ -107,11 +108,11 @@ namespace HW
 
         //6. Пользователь вводит 1 число(N).Выведите N - ое число ряда фибоначчи.
         //     В ряду фибоначчи каждое следующее число является суммой двух предыдущих. Первое и второе считаются равными 1.
-        public static int task6(int a=7)
+        public static ulong task6(int a=7)
         {
-            int first = 1;
-            int second = 1;
-            int tmp = 0;
+            ulong first = 1;
+            ulong second = 1;
+            ulong tmp = 0;
             if (a < 3)
             {
                 tmp = 1;
@@ -140,11 +141,11 @@ namespace HW
 
         //8. Пользователь вводит целое положительное число,
         //     которое является кубом целого числа N. Найдите число N методом половинного деления.
-        public static int task8(int a)
+        public static ulong task8(ulong a)
         {
-            int left = 1;
-            int right = a;
-            int middle = right;
+            ulong left = 1;
+            ulong right = a;
+            ulong middle = right;
             while(middle*middle*middle != a)
             {
                if(((right + left) / 2) * ((right + left) / 2) * ((right + left) / 2) > a)
@@ -193,6 +194,10 @@ namespace HW
          //     сумма четных цифр которых больше суммы нечетных. 
         public static int[] task11(int N)
         {
+            if(N<0)
+            {
+                throw new ArgumentException("The number cannot be less than zero");
+            }
             int count = 0;
             for(int i=2;i<=N;++i)
             {  

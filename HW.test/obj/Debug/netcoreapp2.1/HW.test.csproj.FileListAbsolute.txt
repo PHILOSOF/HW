@@ -16,3 +16,4 @@ D:\Documents\Visual Studio 2017\Projects\HW\HW.test\obj\Debug\netcoreapp2.1\HW.t
 D:\Documents\Visual Studio 2017\Projects\HW\HW.test\obj\Debug\netcoreapp2.1\HW.test.csproj.CopyComplete
 D:\Documents\Visual Studio 2017\Projects\HW\HW.test\obj\Debug\netcoreapp2.1\HW.test.dll
 D:\Documents\Visual Studio 2017\Projects\HW\HW.test\obj\Debug\netcoreapp2.1\HW.test.pdb
+D:\Documents\Visual Studio 2017\Projects\HW\HW.test\obj\Debug\netcoreapp2.1\HW.test.genruntimeconfig.cache
