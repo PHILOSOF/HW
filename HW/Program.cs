@@ -35,16 +35,16 @@ namespace HW
                 //HW4.showArray(HW4.task10(array));
                 //HW4.showArray(HW4.task9(array));
 
-               // HW4.task1(new int[] { });
-               // HW4.task2(new int[] { });
-                HW4.task3(new int[] { });
-                HW4.task4(new int[] { });
-                HW4.task5(new int[] { });
-                HW4.task6(new int[] { });
-                HW4.task7(new int[] { });
-                HW4.task8(new int[] { });
-                HW4.task9(new int[] { });
-                HW4.task10(new int[] { });
+                //HW4.task1(new int[] { });
+                //HW4.task2(new int[] { });
+                //HW4.task3(new int[] { });
+                //HW4.task4(new int[] { });
+                //HW4.task5(new int[] { });
+                //HW4.task6(new int[] { });
+                //HW4.task7(new int[] { });
+                //HW4.task8(new int[] { });
+                //HW4.task9(new int[] { });
+                //HW4.task10(new int[] { });
             }//4
             {
                 //Random rand = new Random();
@@ -57,6 +57,13 @@ namespace HW
                 //HW4.showArray(HW5.task3(arr));
                 //HW4.showArray(HW5.task4(arr
                 //Console.WriteLine(HW5.task5(arr));
+
+                HW5.task1(new int[,] { { },{ } });
+                //HW5.task2(new int[,] { { } });
+                //HW5.task3(new int[,] { { } });
+                //HW5.task4(new int[,] { { } });
+                //HW5.task5(new int[,] { { } });
+                //HW5.task6(new int[,] { { } });
 
 
             }//5

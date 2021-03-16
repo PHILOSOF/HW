@@ -48,6 +48,10 @@ namespace HW
         //2.Найти максимальный элемент массива
         public static int task2(int[] arr)
         {
+            if (arr.Length == 0)
+            {
+                throw new ArgumentException("Array size cannot be zero");
+            }
             int max = arr[0];
             for (int i = 1; i < arr.Length; ++i)
             {
@@ -60,6 +64,10 @@ namespace HW
         //3.Найти индекс минимального элемента массива
         public static int task3(int[] arr)
         {
+            if (arr.Length == 0)
+            {
+                throw new ArgumentException("Array size cannot be zero");
+            }
             int minIndex = 0;
             for (int i = 1; i < arr.Length; ++i)
             {
@@ -72,6 +80,10 @@ namespace HW
         //4.Найти индекс максимального элемента массива
         public static int task4(int[] arr)
         {
+            if (arr.Length == 0)
+            {
+                throw new ArgumentException("Array size cannot be zero");
+            }
             int maxIndex = 0;
             for (int i = 1; i < arr.Length; ++i)
             {
@@ -84,6 +96,10 @@ namespace HW
         //5.Посчитать сумму элементов массива с нечетными индексами
         public static int task5(int[] arr)
         {
+            if (arr.Length == 0)
+            {
+                throw new ArgumentException("Array size cannot be zero");
+            }
             int sum = 0;
             for (int i = 1; i < arr.Length; ++i)
             {
@@ -113,6 +129,10 @@ namespace HW
         //7.Посчитать количество нечетных элементов массива
         public static int task7(int[] arr)
         {
+            if (arr.Length == 0)
+            {
+                throw new ArgumentException("Array size cannot be zero");
+            }
             int count = 0;
             for (int i = 1; i < arr.Length; ++i)
             {

@@ -40,6 +40,10 @@ namespace HW
         //1.Найти минимальный элемент массива
         public static int task1(int[,] arr)
         {
+            if (arr.GetLength(0) == 0 || arr.GetLength(1) == 0)
+            {
+                throw new ArgumentException("Array size cannot be zero");
+            }
             int min = arr[0,0];
             for(int i=0;i<arr.GetLength(0) ;++i)
             {
@@ -54,6 +58,10 @@ namespace HW
         //2.Найти максимальный элемент массива
         public static int task2(int[,] arr)
         {
+            if (arr.GetLength(0) == 0 || arr.GetLength(1) == 0)
+            {
+                throw new ArgumentException("Array size cannot be zero");
+            }
             int max = arr[0, 0];
             for (int i = 0; i < arr.GetLength(0); ++i)
             {
@@ -69,6 +77,11 @@ namespace HW
         //3.Найти индекс минимального элемента массива
         public static int[] task3(int[,] arr)
         {
+
+            if (arr.GetLength(0) == 0 || arr.GetLength(1) == 0)
+            {
+                throw new ArgumentException("Array size cannot be zero");
+            }
             int[] min =new int[2] {0,0};
             for (int i = 0; i < arr.GetLength(0); ++i)
             {
@@ -86,6 +99,10 @@ namespace HW
         //4.Найти индекс максимального элемента массива
         public static int[] task4(int[,] arr)
         {
+            if (arr.GetLength(0) == 0 || arr.GetLength(1) == 0)
+            {
+                throw new ArgumentException("Array size cannot be zero");
+            }
             int[] max = new int[2] { 0, 0 };
             for (int i = 0; i < arr.GetLength(0); ++i)
             {
@@ -104,6 +121,10 @@ namespace HW
         //5.Найти количество элементов массива, которые больше всех своих соседей одновременно
         public static int task5(int[,] arr)
         {
+            if (arr.GetLength(0) == 0 || arr.GetLength(1) == 0)
+            {
+                throw new ArgumentException("Array size cannot be zero");
+            }
             int count = 0;
             for (int i = 0; i < arr.GetLength(0); ++i)
             {

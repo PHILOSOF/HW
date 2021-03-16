@@ -9,7 +9,7 @@ namespace HW.test
         [TestCase( new int[] {0, 100, 750, 20, 150, 37, 9950}, 0)]
         [TestCase( new int[] {10, 33, 22, 20, 96, 37, 9950}, 10)]
         [TestCase( new int[] {100, 100, 100, 100, 100}, 100)]
-       
+           
         public static void Task1(int[] a, int expected)
         {
             int actual = HW4.task1(a);
