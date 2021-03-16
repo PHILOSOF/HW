@@ -58,28 +58,29 @@ namespace HW
         }
 
         //3.Найти индекс минимального элемента массива
-
         public static int task3(int[] arr)
         {
-            int min = 0;
+            int minIndex = 0;
             for (int i = 1; i < arr.Length; ++i)
             {
-                if (arr[i] < arr[min])
-                    min = i;
+                if (arr[i] < arr[minIndex])
+                    minIndex = i;
             }
-            return min;
+            return minIndex;
         }
+
         //4.Найти индекс максимального элемента массива
         public static int task4(int[] arr)
         {
-            int max = 0;
+            int maxIndex = 0;
             for (int i = 1; i < arr.Length; ++i)
             {
-                if (arr[i] > arr[max])
-                    max = i;
+                if (arr[i] > arr[maxIndex])
+                    maxIndex = i;
             }
-            return max;
+            return maxIndex;
         }
+
         //5.Посчитать сумму элементов массива с нечетными индексами
         public static int task5(int[] arr)
         {
@@ -87,7 +88,7 @@ namespace HW
             for (int i = 1; i < arr.Length; ++i)
             {
                 if (i%2 != 0)
-                    sum += i;
+                    sum += arr[i];
             }
             return sum;
         }
